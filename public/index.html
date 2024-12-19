@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#757575">
+    <title>Socket.IO Chat Example</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+   
+  </head>
+  <body>
+    <ul class="pages">
+      <li class="chat page">
+        <div class="stream">
+
+        </div>
+        <div class="chatArea">
+          <ul class="messages"></ul>
+        </div>
+        <div class="chatform">
+          <input class="inputMessage" placeholder="コメントを入力" />
+          <button id="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </li>
+      <li class="login page">
+        <div class="form">
+          <div class="form-content">
+            <h3 class="title">ログイン</h3>
+            <div class="inputform">
+              <label for="username">ユーザー名</label>
+              <input
+                class="usernameInput"
+                type="text"
+                maxlength="14"
+                id="username"
+                placeholder="任意のユーザー名を入力"
+                autocomplete="off"
+              />
+              
+            </div>
+            <div class="inputform">
+              <label for="roomid">ルームID</label>
+              <input class="roomname" type="text" id="roomid" placeholder="ルームIDを入力" autocomplete="off" />
+            </div>
+
+            <div class="inputform>
+              <label for="loginbtn">　　　　　　　　　　</label>
+              <button class="loginbtn" id="loginbtn">
+                ログイン
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <script
+      src="https://kit.fontawesome.com/d37cf25b9f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
