@@ -211,7 +211,7 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 .header {
-  height: 50px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -229,7 +229,7 @@ button {
 .header__tab-list--tab {
   --md-sys-shape-corner-full: none;
   --md-sys-shape-corner-largetop: 2px;
-
+  height: 60px;
   color: #ffffff;
   --md-sys-color-primary: #ffffff;
   transition: all 0.2s;
@@ -252,6 +252,25 @@ button {
     }
   }
 }
+.header__theme-change {
+  width: 100px;
+}
+.header__theme-change--switch {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  --md-switch-track-color: #0079ca65;
+  --md-switch-handle-color: #fff;
+  --md-switch-hover-handle-color: #e9e9e9;
+  --md-switch-hover-track-color: #0079ca94;
+  --md-switch-pressed-handle-color: #fff;
+}
+.header__theme-change--sentence {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
 main {
   background-color: #ececec;
   width: auto;
