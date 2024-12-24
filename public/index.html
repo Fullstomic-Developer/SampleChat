@@ -38,7 +38,7 @@
   </head>
   <body>
     <ul class="pages">
-      <li class="chat page">
+      <li class="chat page" id="chat">
         <header class="header">
           <md-tabs class="header__tab-list">
             <md-primary-tab class="header__tab-list--tab tab-active">
@@ -51,7 +51,10 @@
             </md-primary-tab>
           </md-tabs>
           <div class="header__theme-change">
-            <md-switch class="header__theme-change--switch"></md-switch>
+            <md-switch
+              class="header__theme-change--switch"
+              id="themechangeswitch"
+            ></md-switch>
             <i class="header__theme-change--sentence">テーマ変更</i>
           </div>
         </header>

@@ -574,4 +574,14 @@ $(function () {
     addParticipantsMessage(data);
     removeChatTyping(data);
   });
+  let darkflag = false;
+  $("#themechangeswitch").click(function () {
+    if (!darkflag) {
+      $("#chat").addClass("darktheme");
+      darkflag = true;
+    } else {
+      $("#chat").removeClass("darktheme");
+      darkflag = false;
+    }
+  });
 });
