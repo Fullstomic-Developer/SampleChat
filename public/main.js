@@ -404,7 +404,9 @@ $(function () {
   };
   // Log a message
   const log = (message, options) => {
-    const $el = $("<li>").addClass("log").text(message);
+    const $el = $("<li>")
+      .addClass("chat__comment-list--other_message")
+      .text(message);
     addMessageElement($el, options);
   };
 
@@ -423,7 +425,7 @@ $(function () {
     const $messageBodyDiv = $('<span class="messageBody">').text(data.message);
 
     const typingClass = data.typing ? "typing" : "";
-    const $messageDiv = $('<li class="message"/>')
+    const $messageDiv = $('<li class="chat__comment-list--my_message"/>')
       .data("username", data.username)
       .addClass(typingClass)
       .append($usernameDiv, $messageBodyDiv);
