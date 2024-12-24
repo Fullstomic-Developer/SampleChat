@@ -214,7 +214,7 @@ button {
   height: 50px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .header__tab-list {
@@ -276,7 +276,7 @@ main {
     }
   }
 }
-.chat {
+.chatsection {
   background-color: #e2e2e2;
   display: block;
   width: 90%;
